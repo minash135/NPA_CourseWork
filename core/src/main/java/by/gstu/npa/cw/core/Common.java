@@ -8,9 +8,6 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-/**
- * @author EpicDima
- */
 public final class Common {
 
     public static final int PORT = 8383;
