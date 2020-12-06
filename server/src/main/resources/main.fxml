@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox minHeight="376.0" minWidth="592.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="by.gstu.npa.cw.server.MainController">
+    <GridPane fx:id="imageLayout">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS"/>
+        </rowConstraints>
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
+        </padding>
+        <ImageView fx:id="imageView" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true"
+                   smooth="false" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP"
+                   GridPane.vgrow="ALWAYS"/>
+    </GridPane>
+    <GridPane minHeight="-Infinity">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints fillHeight="false" percentHeight="10.0" vgrow="NEVER"/>
+            <RowConstraints fillHeight="false" percentHeight="10.0" vgrow="NEVER"/>
+            <RowConstraints fillHeight="false" percentHeight="10.0" vgrow="NEVER"/>
+            <RowConstraints maxHeight="-Infinity" percentHeight="30.0" valignment="CENTER" vgrow="ALWAYS"/>
+            <RowConstraints maxHeight="-Infinity" percentHeight="40.0" valignment="BOTTOM" vgrow="ALWAYS"/>
+        </rowConstraints>
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
+        </padding>
+        <VBox>
+            <padding>
+                <Insets bottom="8.0"/>
+            </padding>
+            <Label fx:id="clientsCountLabel" text="Количество клиентов"/>
+            <Spinner fx:id="clientsCountInput" prefWidth="200.0"/>
+        </VBox>
+        <VBox GridPane.rowIndex="1">
+            <padding>
+                <Insets bottom="8.0"/>
+            </padding>
+            <Label fx:id="kernelSizeLabel" text="Размер сглаживающей ячейки"/>
+            <Spinner fx:id="kernelSizeInput" minWidth="200.0" prefWidth="200.0"/>
+        </VBox>
+        <VBox GridPane.rowIndex="2">
+            <padding>
+                <Insets bottom="8.0"/>
+            </padding>
+            <Label fx:id="repeatCountLabel" text="Число циклов сглаживания"/>
+            <Spinner fx:id="repeatCountInput" maxWidth="-Infinity" prefWidth="200.0"/>
+        </VBox>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" spacing="12.0" GridPane.rowIndex="3">
+            <Button fx:id="chooseImageButton" maxWidth="-Infinity" mnemonicParsing="false"
+                    onMouseClicked="#onOpenImageClick" prefWidth="200.0" text="Выбрать изображение"/>
+            <Button fx:id="smoothImageButton" maxWidth="-Infinity" mnemonicParsing="false"
+                    onMouseClicked="#onSmoothImageClick" prefWidth="200.0" text="Применить сглаживание"/>
+            <Button fx:id="saveImageButton" maxWidth="-Infinity" mnemonicParsing="false"
+                    onMouseClicked="#onSaveImageClick" prefWidth="200.0" text="Сохранить изображение"/>
+        </VBox>
+        <VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" minWidth="-Infinity" spacing="8.0"
+              GridPane.rowIndex="4">
+            <VBox spacing="4.0">
+                <Label fx:id="activeClientsInfoLabel" text="Количество активных клиентов"/>
+                <Label fx:id="activeClientsLabel" text="0"/>
+            </VBox>
+            <VBox spacing="4.0">
+                <Label fx:id="processingTimeInfoLabel" text="Время обработки (мc)"/>
+                <Label fx:id="processingTimeLabel" text="0"/>
+            </VBox>
+        </VBox>
+    </GridPane>
+</HBox>

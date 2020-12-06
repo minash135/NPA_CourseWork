@@ -1,0 +1,5 @@
+rootProject.name = 'SmoothingApp'
+include 'core'
+include 'client'
+include 'server'
+

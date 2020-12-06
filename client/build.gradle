@@ -1,0 +1,27 @@
+plugins {
+    id "java"
+}
+
+group "by.gstu.npa.cw.client"
+version "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":core")
+}
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+
+jar {
+    manifest {
+        attributes "Main-Class": "by.gstu.npa.cw.client.Client"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

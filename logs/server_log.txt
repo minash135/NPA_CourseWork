@@ -1,0 +1,240 @@
+2020-10-25 23:17:50,869 INFO b.g.n.c.c.Client [main] +++++++Request for smoothing+++++++
+2020-10-25 23:17:50,876 INFO b.g.n.c.c.Client [main] ---------Request parameters--------
+2020-10-25 23:17:50,876 INFO b.g.n.c.c.Client [main] Kernel size: 3
+2020-10-25 23:17:50,877 INFO b.g.n.c.c.Client [main] Repeat count: 2
+2020-10-25 23:17:50,877 INFO b.g.n.c.c.Client [main] Image: null
+2020-10-25 23:17:50,878 INFO b.g.n.c.c.Client [main] ------Start of image smoothing-----
+2020-10-25 23:17:50,881 FATAL b.g.n.c.c.Client [main] java.lang.NullPointerException
+2020-10-25 23:19:00,916 FATAL b.g.n.c.c.Client [main] Connection to the server is broken: {0}
+javax.imageio.IIOException: Error reading PNG image data
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1502) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.read(PNGImageReader.java:1810) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1468) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1363) ~[?:?]
+	at by.gstu.npa.cw.core.Common.receive(Common.java:35) ~[core-1.0-SNAPSHOT.jar:?]
+	at by.gstu.npa.cw.client.Client.start(Client.java:65) [main/:?]
+	at by.gstu.npa.cw.client.Client.main(Client.java:28) [main/:?]
+Caused by: java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:245) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:252) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:292) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:351) ~[?:?]
+	at java.io.DataInputStream.readFully(DataInputStream.java:200) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodePass(PNGImageReader.java:1224) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodeImage(PNGImageReader.java:1360) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1493) ~[?:?]
+	... 6 more
+2020-10-25 23:20:03,462 FATAL b.g.n.c.c.Client [main] Connection to the server is broken: {0}
+javax.imageio.IIOException: Error reading PNG image data
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1502) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.read(PNGImageReader.java:1810) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1468) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1363) ~[?:?]
+	at by.gstu.npa.cw.core.Common.receive(Common.java:35) ~[core-1.0-SNAPSHOT.jar:?]
+	at by.gstu.npa.cw.client.Client.start(Client.java:65) [main/:?]
+	at by.gstu.npa.cw.client.Client.main(Client.java:28) [main/:?]
+Caused by: java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:245) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:252) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:292) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:351) ~[?:?]
+	at java.io.DataInputStream.readFully(DataInputStream.java:200) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodePass(PNGImageReader.java:1224) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodeImage(PNGImageReader.java:1360) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1493) ~[?:?]
+	... 6 more
+2020-10-25 23:22:29,096 FATAL b.g.n.c.c.Client [main] Connection to the server is broken: {0}
+javax.imageio.IIOException: Error reading PNG image data
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1502) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.read(PNGImageReader.java:1810) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1468) ~[?:?]
+	at javax.imageio.ImageIO.read(ImageIO.java:1363) ~[?:?]
+	at by.gstu.npa.cw.core.Common.receive(Common.java:35) ~[core-1.0-SNAPSHOT.jar:?]
+	at by.gstu.npa.cw.client.Client.start(Client.java:65) [main/:?]
+	at by.gstu.npa.cw.client.Client.main(Client.java:28) [main/:?]
+Caused by: java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:245) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:252) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:292) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:351) ~[?:?]
+	at java.io.DataInputStream.readFully(DataInputStream.java:200) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodePass(PNGImageReader.java:1224) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.decodeImage(PNGImageReader.java:1360) ~[?:?]
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(PNGImageReader.java:1493) ~[?:?]
+	... 6 more
+2020-10-25 23:24:36,568 INFO b.g.n.c.c.Client [main] +++++++Request for smoothing+++++++
+2020-10-25 23:24:36,573 INFO b.g.n.c.c.Client [main] ---------Request parameters--------
+2020-10-25 23:24:36,575 INFO b.g.n.c.c.Client [main] Kernel size: 4
+2020-10-25 23:24:36,577 INFO b.g.n.c.c.Client [main] Repeat count: 5
+2020-10-25 23:24:36,689 INFO b.g.n.c.c.Client [main] Image: BufferedImage@60856961: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@53f6fd09 transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 1600 height = 1200 #numDataElements 3 dataOff[0] = 2
+2020-10-25 23:24:36,689 INFO b.g.n.c.c.Client [main] ------Start of image smoothing-----
+2020-10-25 23:24:40,696 INFO b.g.n.c.c.Client [main] ---------Image is smoothed---------
+2020-10-25 23:24:40,697 INFO b.g.n.c.c.Client [main] ----------Sending response---------
+2020-10-25 23:24:41,532 INFO b.g.n.c.c.Client [main] -----------Response sent-----------
+2020-10-25 23:24:41,550 INFO b.g.n.c.c.Client [main] ++++Request has been processed+++++
+
+2020-10-25 23:24:45,362 INFO b.g.n.c.c.Client [main] +++++++Request for smoothing+++++++
+2020-10-25 23:24:45,362 INFO b.g.n.c.c.Client [main] ---------Request parameters--------
+2020-10-25 23:24:45,363 INFO b.g.n.c.c.Client [main] Kernel size: 4
+2020-10-25 23:24:45,364 INFO b.g.n.c.c.Client [main] Repeat count: 5
+2020-10-25 23:24:45,364 INFO b.g.n.c.c.Client [main] Image: BufferedImage@bcef303: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@53f6fd09 transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 1600 height = 1200 #numDataElements 3 dataOff[0] = 2
+2020-10-25 23:24:45,366 INFO b.g.n.c.c.Client [main] ------Start of image smoothing-----
+2020-10-25 23:24:48,804 INFO b.g.n.c.c.Client [main] ---------Image is smoothed---------
+2020-10-25 23:24:48,804 INFO b.g.n.c.c.Client [main] ----------Sending response---------
+2020-10-25 23:24:49,629 INFO b.g.n.c.c.Client [main] -----------Response sent-----------
+2020-10-25 23:24:49,629 INFO b.g.n.c.c.Client [main] ++++Request has been processed+++++
+
+2020-10-25 23:24:54,484 INFO b.g.n.c.c.Client [main] +++++++Request for smoothing+++++++
+2020-10-25 23:24:54,485 INFO b.g.n.c.c.Client [main] ---------Request parameters--------
+2020-10-25 23:24:54,485 INFO b.g.n.c.c.Client [main] Kernel size: 2
+2020-10-25 23:24:54,486 INFO b.g.n.c.c.Client [main] Repeat count: 2
+2020-10-25 23:24:54,487 INFO b.g.n.c.c.Client [main] Image: BufferedImage@4f9a2c08: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@53f6fd09 transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 1600 height = 1200 #numDataElements 3 dataOff[0] = 2
+2020-10-25 23:24:54,489 INFO b.g.n.c.c.Client [main] ------Start of image smoothing-----
+2020-10-25 23:24:55,390 INFO b.g.n.c.c.Client [main] ---------Image is smoothed---------
+2020-10-25 23:24:55,391 INFO b.g.n.c.c.Client [main] ----------Sending response---------
+2020-10-25 23:24:56,192 INFO b.g.n.c.c.Client [main] -----------Response sent-----------
+2020-10-25 23:24:56,192 INFO b.g.n.c.c.Client [main] ++++Request has been processed+++++
+
+2020-10-25 23:24:58,491 INFO b.g.n.c.c.Client [main] +++++++Request for smoothing+++++++
+2020-10-25 23:24:58,491 INFO b.g.n.c.c.Client [main] ---------Request parameters--------
+2020-10-25 23:24:58,492 INFO b.g.n.c.c.Client [main] Kernel size: 2
+2020-10-25 23:24:58,493 INFO b.g.n.c.c.Client [main] Repeat count: 2
+2020-10-25 23:24:58,495 INFO b.g.n.c.c.Client [main] Image: BufferedImage@7d1cfb8b: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@53f6fd09 transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 1600 height = 1200 #numDataElements 3 dataOff[0] = 2
+2020-10-25 23:24:58,495 INFO b.g.n.c.c.Client [main] ------Start of image smoothing-----
+2020-10-25 23:24:59,412 INFO b.g.n.c.c.Client [main] ---------Image is smoothed---------
+2020-10-25 23:24:59,412 INFO b.g.n.c.c.Client [main] ----------Sending response---------
+2020-10-25 23:25:00,226 INFO b.g.n.c.c.Client [main] -----------Response sent-----------
+2020-10-25 23:25:00,226 INFO b.g.n.c.c.Client [main] ++++Request has been processed+++++
+
+2020-10-25 23:25:03,023 INFO b.g.n.c.c.Client [main] Connection to the server is closed
+2020-10-25 23:45:01,761 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-25 23:46:26,244 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-25 23:46:26,244 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-25 23:46:26,246 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-25 23:47:28,108 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-25 23:47:54,287 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-25 23:47:54,288 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-25 23:47:54,288 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-25 23:48:14,114 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-25 23:48:44,942 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-25 23:48:44,943 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-25 23:48:44,943 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-25 23:49:56,892 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-25 23:50:27,460 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-25 23:50:27,463 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-25 23:50:27,453 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-25 23:51:58,417 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-25 23:52:22,697 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-25 23:52:22,698 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-25 23:52:22,699 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:10:05,843 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:10:38,087 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:10:38,090 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:10:38,086 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:10:53,849 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:10:56,767 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:10:56,768 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:10:56,766 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:11:09,075 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:11:28,129 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:11:28,131 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:11:28,129 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:11:41,198 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:11:43,672 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:11:43,675 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:11:43,677 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:11:55,856 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:12:38,124 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:12:38,126 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:12:38,126 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:12:50,965 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:12:54,359 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:12:54,358 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:12:54,360 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:21:12,252 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:21:15,311 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:21:15,309 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:21:15,311 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:24:09,164 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:24:11,878 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:24:11,879 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:24:11,886 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:25:01,522 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:25:02,995 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:25:02,996 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:25:03,000 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:43:36,757 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:45:23,306 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:45:23,306 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:45:23,306 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:49:50,901 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:52:54,858 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:53:26,908 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 02:53:26,910 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 02:53:26,906 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 02:55:37,028 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 02:59:03,497 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:02:17,375 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:02:17,384 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:02:17,384 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 03:06:19,054 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:07:48,377 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:14:09,651 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:14:09,659 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 03:14:09,659 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:17:36,814 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:18:37,324 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:20:41,942 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:20:41,957 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 03:20:41,953 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:21:01,144 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:22:09,893 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:22:09,899 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:22:09,889 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 03:23:20,344 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:28:39,931 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:28:39,931 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:28:39,926 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 03:29:07,247 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:34:51,390 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:38:31,676 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 03:42:11,920 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 03:42:11,920 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 03:42:11,914 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 19:24:53,359 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 19:29:32,438 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 19:29:32,444 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 19:29:32,445 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 19:33:22,674 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 19:48:09,605 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 19:48:09,608 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 19:48:09,608 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 19:49:37,174 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 19:53:37,084 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 19:53:37,091 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 19:53:37,091 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 19:56:00,425 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 20:00:12,258 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 20:00:12,266 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 20:00:12,266 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 20:44:48,455 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 20:58:16,454 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 20:58:16,463 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 20:58:16,467 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 21:02:55,901 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 21:10:05,514 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 21:10:05,520 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 21:10:05,512 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 22:03:33,576 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 22:10:13,434 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 22:10:13,435 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 22:10:13,436 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted
+2020-10-26 22:33:41,781 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 22:39:23,104 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 22:42:47,991 INFO b.g.n.c.s.App [JavaFX Application Thread] App has started
+2020-10-26 22:48:35,763 INFO b.g.n.c.s.App [JavaFX Application Thread] App has stoped
+2020-10-26 22:48:35,769 INFO b.g.n.c.s.SocketSmoothManager [Thread-3] java.net.SocketException: Interrupted function call: accept failed
+2020-10-26 22:48:35,769 INFO b.g.n.c.s.SocketSmoothManager [Thread-4] java.lang.InterruptedException: sleep interrupted

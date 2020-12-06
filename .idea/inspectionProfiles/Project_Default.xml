@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AssertsWithoutMessages" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassInDefaultPackage" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="ConstantJUnitAssertArgument" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DuplicateBooleanBranch" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="FlexUnitClassInProductSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitClassVisibilityInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitClassWithNoTestsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitEmptySuiteInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodHasParametersInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodInSuiteInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodIsPropertyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodIsStaticInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodReturnTypeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMethodVisibilityInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitMixedAPIInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FlexUnitSuiteWithNoRunnerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GrazieInspection" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MisorderedAssertEqualsParameters" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonOsgiMavenDependency" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PackageAccessibility" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnregisteredActivator" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="WrongImportPackage" enabled="false" level="ERROR" enabled_by_default="false" />
+  </profile>
+</component>
